@@ -1,7 +1,7 @@
 ## Wie installierst du die Solution?
 
 Gehe in deine PowerApps-Umgebung und in der linken Seite und Lösungen/Solutions.
-Wähle oben `Import` und wähle das zip-Archiv.
+Wähle oben `Import` und wähle das [zip-Archiv](./Schulbuchscanner.zip).
 
 Nun sollten sich in deiner Umgebung folgende Bestandteile wiederfinden:
 * 4 Dataverse-Tabellen
