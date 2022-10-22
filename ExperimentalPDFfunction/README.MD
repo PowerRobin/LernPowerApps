@@ -1,1 +1,1 @@
-Everything is explained in the YouTube video over at https://www.youtube.com/@R2Power
+Everything is explained in the [YouTube video](https://youtu.be/qylQgT0dS0Y)
