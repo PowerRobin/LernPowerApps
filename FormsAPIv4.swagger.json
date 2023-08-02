@@ -1,0 +1,1043 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "FormsAPI",
+    "description": "",
+    "version": "1.0"
+  },
+  "host": "forms.office.com",
+  "basePath": "/formapi/api",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/5cb38359-4c6c-4d05-85b7-ebefb8e8fe80/users/df3dd4c8-ac2d-44c7-8a87-e45660969b1d/forms('WYOzXGxMBU2Ft-vvuOj-gMjUPd8trMdEiofkVmCWmx1UN04zUE4zT0I3QjBITFBaTzdRQ0I0MkE5Vy4u')/GetAggregateSurveyData": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GetAggregateSurveyData",
+        "operationId": "GetAggregateSurveyData",
+        "parameters": []
+      }
+    },
+    "/5cb38359-4c6c-4d05-85b7-ebefb8e8fe80/users/df3dd4c8-ac2d-44c7-8a87-e45660969b1d/forms('WYOzXGxMBU2Ft-vvuOj-gMjUPd8trMdEiofkVmCWmx1UN04zUE4zT0I3QjBITFBaTzdRQ0I0MkE5Vy4u')/responses": {},
+    "/{TenantID}/users/{UserID}/forms": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "CreateForm",
+        "operationId": "CreateForm",
+        "parameters": [
+          {
+            "name": "TenantID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "description": "title"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/{TenantID}/users/{UserID}/light/forms": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "createdBy": {
+                        "type": "string",
+                        "description": "createdBy"
+                      },
+                      "responses": {
+                        "type": "array",
+                        "items": {},
+                        "description": "responses"
+                      },
+                      "permissionTokens": {
+                        "type": "array",
+                        "items": {},
+                        "description": "permissionTokens"
+                      },
+                      "fileUploadFormInfo": {
+                        "type": "string",
+                        "description": "fileUploadFormInfo"
+                      },
+                      "xlFileUnSynced": {
+                        "type": "boolean",
+                        "description": "xlFileUnSynced"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "description"
+                      },
+                      "onlineSafetyLevel": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "onlineSafetyLevel"
+                      },
+                      "reputationTier": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "reputationTier"
+                      },
+                      "background": {
+                        "type": "object",
+                        "properties": {
+                          "altText": {
+                            "type": "string",
+                            "description": "altText"
+                          },
+                          "contentType": {
+                            "type": "string",
+                            "description": "contentType"
+                          },
+                          "fileIdentifier": {
+                            "type": "string",
+                            "description": "fileIdentifier"
+                          },
+                          "originalFileName": {
+                            "type": "string",
+                            "description": "originalFileName"
+                          },
+                          "resourceId": {
+                            "type": "string",
+                            "description": "resourceId"
+                          },
+                          "resourceUrl": {
+                            "type": "string",
+                            "description": "resourceUrl"
+                          },
+                          "height": {
+                            "type": "string",
+                            "description": "height"
+                          },
+                          "width": {
+                            "type": "string",
+                            "description": "width"
+                          },
+                          "size": {
+                            "type": "string",
+                            "description": "size"
+                          }
+                        },
+                        "description": "background"
+                      },
+                      "header": {
+                        "type": "object",
+                        "properties": {
+                          "altText": {
+                            "type": "string",
+                            "description": "altText"
+                          },
+                          "contentType": {
+                            "type": "string",
+                            "description": "contentType"
+                          },
+                          "fileIdentifier": {
+                            "type": "string",
+                            "description": "fileIdentifier"
+                          },
+                          "originalFileName": {
+                            "type": "string",
+                            "description": "originalFileName"
+                          },
+                          "resourceId": {
+                            "type": "string",
+                            "description": "resourceId"
+                          },
+                          "resourceUrl": {
+                            "type": "string",
+                            "description": "resourceUrl"
+                          },
+                          "height": {
+                            "type": "string",
+                            "description": "height"
+                          },
+                          "width": {
+                            "type": "string",
+                            "description": "width"
+                          },
+                          "size": {
+                            "type": "string",
+                            "description": "size"
+                          }
+                        },
+                        "description": "header"
+                      },
+                      "logo": {
+                        "type": "object",
+                        "properties": {
+                          "altText": {
+                            "type": "string",
+                            "description": "altText"
+                          },
+                          "contentType": {
+                            "type": "string",
+                            "description": "contentType"
+                          },
+                          "fileIdentifier": {
+                            "type": "string",
+                            "description": "fileIdentifier"
+                          },
+                          "originalFileName": {
+                            "type": "string",
+                            "description": "originalFileName"
+                          },
+                          "resourceId": {
+                            "type": "string",
+                            "description": "resourceId"
+                          },
+                          "resourceUrl": {
+                            "type": "string",
+                            "description": "resourceUrl"
+                          },
+                          "height": {
+                            "type": "string",
+                            "description": "height"
+                          },
+                          "width": {
+                            "type": "string",
+                            "description": "width"
+                          },
+                          "size": {
+                            "type": "string",
+                            "description": "size"
+                          }
+                        },
+                        "description": "logo"
+                      },
+                      "tableId": {
+                        "type": "string",
+                        "description": "tableId"
+                      },
+                      "otherInfo": {
+                        "type": "string",
+                        "description": "otherInfo"
+                      },
+                      "runtimeResponses": {
+                        "type": "string",
+                        "description": "runtimeResponses"
+                      },
+                      "permissions": {
+                        "type": "array",
+                        "items": {},
+                        "description": "permissions"
+                      },
+                      "responderPermissions": {
+                        "type": "array",
+                        "items": {},
+                        "description": "responderPermissions"
+                      },
+                      "status": {
+                        "type": "string",
+                        "description": "status"
+                      },
+                      "category": {
+                        "type": "string",
+                        "description": "category"
+                      },
+                      "localeInfo": {
+                        "type": "object",
+                        "properties": {
+                          "TimezoneOffset": {
+                            "type": "string",
+                            "description": "TimezoneOffset"
+                          },
+                          "Locale": {
+                            "type": "string",
+                            "description": "Locale"
+                          }
+                        },
+                        "description": "localeInfo"
+                      },
+                      "descriptiveQuestions": {
+                        "type": "array",
+                        "items": {},
+                        "description": "descriptiveQuestions"
+                      },
+                      "questions": {
+                        "type": "array",
+                        "items": {},
+                        "description": "questions"
+                      },
+                      "predefinedResponses": {
+                        "type": "string",
+                        "description": "predefinedResponses"
+                      },
+                      "fillOutRemainingTime": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "fillOutRemainingTime"
+                      },
+                      "timedFormStartTime": {
+                        "type": "string",
+                        "description": "timedFormStartTime"
+                      },
+                      "distributionInfo": {
+                        "type": "string",
+                        "description": "distributionInfo"
+                      },
+                      "id": {
+                        "type": "string",
+                        "description": "id"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "title"
+                      },
+                      "createdDate": {
+                        "type": "string",
+                        "description": "createdDate"
+                      },
+                      "modifiedDate": {
+                        "type": "string",
+                        "description": "modifiedDate"
+                      },
+                      "version": {
+                        "type": "string",
+                        "description": "version"
+                      },
+                      "ownerId": {
+                        "type": "string",
+                        "description": "ownerId"
+                      },
+                      "ownerTenantId": {
+                        "type": "string",
+                        "description": "ownerTenantId"
+                      },
+                      "settings": {
+                        "type": "object",
+                        "properties": {
+                          "AllowResponderGetAllResponses": {
+                            "type": "boolean",
+                            "description": "AllowResponderGetAllResponses"
+                          },
+                          "IsAnonymous": {
+                            "type": "boolean",
+                            "description": "IsAnonymous"
+                          },
+                          "IsQuizMode": {
+                            "type": "boolean",
+                            "description": "IsQuizMode"
+                          },
+                          "NotRecordIdentity": {
+                            "type": "boolean",
+                            "description": "NotRecordIdentity"
+                          },
+                          "PrivateDraft": {
+                            "type": "boolean",
+                            "description": "PrivateDraft"
+                          },
+                          "RequiresUniqueResponse": {
+                            "type": "boolean",
+                            "description": "RequiresUniqueResponse"
+                          },
+                          "ShowGradedScores": {
+                            "type": "boolean",
+                            "description": "ShowGradedScores"
+                          },
+                          "AllowEditResponse": {
+                            "type": "boolean",
+                            "description": "AllowEditResponse"
+                          }
+                        },
+                        "description": "settings"
+                      },
+                      "deserializedSettings": {
+                        "type": "string",
+                        "description": "deserializedSettings"
+                      },
+                      "softDeleted": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "softDeleted"
+                      },
+                      "thankYouMessage": {
+                        "type": "string",
+                        "description": "thankYouMessage"
+                      },
+                      "flags": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "flags"
+                      },
+                      "emailReceiptEnabled": {
+                        "type": "string",
+                        "description": "emailReceiptEnabled"
+                      },
+                      "type": {
+                        "type": "string",
+                        "description": "type"
+                      },
+                      "meetingId": {
+                        "type": "string",
+                        "description": "meetingId"
+                      },
+                      "formsInsightsInfo": {
+                        "type": "string",
+                        "description": "formsInsightsInfo"
+                      },
+                      "formsProRTTitle": {
+                        "type": "string",
+                        "description": "formsProRTTitle"
+                      },
+                      "formsProRTDescription": {
+                        "type": "string",
+                        "description": "formsProRTDescription"
+                      },
+                      "defaultLanguage": {
+                        "type": "string",
+                        "description": "defaultLanguage"
+                      },
+                      "dataClassificationLevel": {
+                        "type": "string",
+                        "description": "dataClassificationLevel"
+                      },
+                      "localeList": {
+                        "type": "array",
+                        "items": {},
+                        "description": "localeList"
+                      },
+                      "responseThresholdCount": {
+                        "type": "string",
+                        "description": "responseThresholdCount"
+                      },
+                      "inviteExpiryDays": {
+                        "type": "string",
+                        "description": "inviteExpiryDays"
+                      },
+                      "tenantSwitches": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "tenantSwitches"
+                      },
+                      "privacyUrl": {
+                        "type": "string",
+                        "description": "privacyUrl"
+                      },
+                      "collectionId": {
+                        "type": "string",
+                        "description": "collectionId"
+                      },
+                      "fillOutTimeLimit": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "fillOutTimeLimit"
+                      },
+                      "mfpBranchingData": {
+                        "type": "string",
+                        "description": "mfpBranchingData"
+                      },
+                      "rowCount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "rowCount"
+                      },
+                      "botDataProperty": {
+                        "type": "string",
+                        "description": "botDataProperty"
+                      },
+                      "teamsPollProperty": {
+                        "type": "object",
+                        "properties": {
+                          "ownerName": {
+                            "type": "string",
+                            "description": "ownerName"
+                          },
+                          "resultId": {
+                            "type": "string",
+                            "description": "resultId"
+                          },
+                          "formCardId": {
+                            "type": "string",
+                            "description": "formCardId"
+                          },
+                          "cardHost": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "cardHost"
+                          },
+                          "teamsAppId": {
+                            "type": "string",
+                            "description": "teamsAppId"
+                          }
+                        },
+                        "description": "teamsPollProperty"
+                      },
+                      "order": {
+                        "type": "string",
+                        "description": "order"
+                      },
+                      "trackingId": {
+                        "type": "string",
+                        "description": "trackingId"
+                      },
+                      "progressBarEnabled": {
+                        "type": "string",
+                        "description": "progressBarEnabled"
+                      }
+                    }
+                  },
+                  "description": "value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "GetUserForms",
+        "operationId": "GetUserForms",
+        "parameters": [
+          {
+            "name": "TenantID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/{TenantID}/users/{UserID}/forms('{FormsID}')/responses": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GetResponses",
+        "operationId": "GetResponses",
+        "parameters": [
+          {
+            "name": "TenantID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "FormsID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/{TenantID}/users/{UserID}/forms('{FormID}')/questions": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "@odata.context": {
+                  "type": "string",
+                  "description": "@odata.context"
+                },
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "description": "id"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "title"
+                      },
+                      "order": {
+                        "type": "number",
+                        "format": "float",
+                        "description": "order",
+                        "title": ""
+                      },
+                      "type": {
+                        "type": "string",
+                        "description": "type"
+                      },
+                      "required": {
+                        "type": "boolean",
+                        "description": "required"
+                      },
+                      "questionInfo": {
+                        "type": "object",
+                        "properties": {
+                          "Choices": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "Description": {
+                                  "type": "string",
+                                  "description": "Description"
+                                },
+                                "FormsProDisplayRTText": {
+                                  "type": "string",
+                                  "description": "FormsProDisplayRTText"
+                                }
+                              }
+                            },
+                            "description": "Choices"
+                          },
+                          "ChoiceType": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "ChoiceType"
+                          },
+                          "AllowOtherAnswer": {
+                            "type": "boolean",
+                            "description": "AllowOtherAnswer"
+                          },
+                          "OptionDisplayStyle": {
+                            "type": "string",
+                            "description": "OptionDisplayStyle"
+                          },
+                          "ChoiceRestrictionType": {
+                            "type": "string",
+                            "description": "ChoiceRestrictionType"
+                          },
+                          "ShuffleOptions": {
+                            "type": "boolean",
+                            "description": "ShuffleOptions"
+                          },
+                          "ShowRatingLabel": {
+                            "type": "boolean",
+                            "description": "ShowRatingLabel"
+                          }
+                        },
+                        "description": "questionInfo"
+                      },
+                      "isQuiz": {
+                        "type": "boolean",
+                        "description": "isQuiz"
+                      },
+                      "justification": {
+                        "type": "string",
+                        "description": "justification"
+                      },
+                      "groupId": {
+                        "type": "string",
+                        "description": "groupId"
+                      },
+                      "defaultValue": {
+                        "type": "string",
+                        "description": "defaultValue"
+                      },
+                      "modifiedDate": {
+                        "type": "string",
+                        "description": "modifiedDate"
+                      },
+                      "status": {
+                        "type": "string",
+                        "description": "status"
+                      },
+                      "subtitle": {
+                        "type": "string",
+                        "description": "subtitle"
+                      },
+                      "allowMultipleValues": {
+                        "type": "string",
+                        "description": "allowMultipleValues"
+                      },
+                      "titleHasPhishingKeywords": {
+                        "type": "boolean",
+                        "description": "titleHasPhishingKeywords"
+                      },
+                      "subtitleHasPhishingKeywords": {
+                        "type": "boolean",
+                        "description": "subtitleHasPhishingKeywords"
+                      },
+                      "questionTagForIntelligence": {
+                        "type": "string",
+                        "description": "questionTagForIntelligence"
+                      },
+                      "isFromSuggestion": {
+                        "type": "boolean",
+                        "description": "isFromSuggestion"
+                      },
+                      "insightsInfo": {
+                        "type": "string",
+                        "description": "insightsInfo"
+                      },
+                      "formsProRTQuestionTitle": {
+                        "type": "string",
+                        "description": "formsProRTQuestionTitle"
+                      },
+                      "formsProRTSubtitle": {
+                        "type": "string",
+                        "description": "formsProRTSubtitle"
+                      },
+                      "imageList": {
+                        "type": "string",
+                        "description": "imageList"
+                      },
+                      "allowCustomChoice": {
+                        "type": "string",
+                        "description": "allowCustomChoice"
+                      },
+                      "trackingId": {
+                        "type": "string",
+                        "description": "trackingId"
+                      },
+                      "image": {
+                        "type": "object",
+                        "properties": {
+                          "altText": {
+                            "type": "string",
+                            "description": "altText"
+                          },
+                          "contentType": {
+                            "type": "string",
+                            "description": "contentType"
+                          },
+                          "fileIdentifier": {
+                            "type": "string",
+                            "description": "fileIdentifier"
+                          },
+                          "height": {
+                            "type": "string",
+                            "description": "height"
+                          },
+                          "originalFileName": {
+                            "type": "string",
+                            "description": "originalFileName"
+                          },
+                          "resourceId": {
+                            "type": "string",
+                            "description": "resourceId"
+                          },
+                          "resourceUrl": {
+                            "type": "string",
+                            "description": "resourceUrl"
+                          },
+                          "width": {
+                            "type": "string",
+                            "description": "width"
+                          },
+                          "size": {
+                            "type": "string",
+                            "description": "size"
+                          }
+                        },
+                        "description": "image"
+                      },
+                      "fileUploadSPOInfo": {
+                        "type": "string",
+                        "description": "fileUploadSPOInfo"
+                      }
+                    }
+                  },
+                  "description": "value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "GetQuestions",
+        "operationId": "GetQuestions",
+        "parameters": [
+          {
+            "name": "TenantID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "FormID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "PostQuestion",
+        "operationId": "PostQuestion",
+        "parameters": [
+          {
+            "name": "TenantID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "FormID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "questionInfo": {
+                  "type": "string",
+                  "description": "questionDefinition"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "title"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "order": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "order"
+                },
+                "isQuiz": {
+                  "type": "boolean",
+                  "description": "isQuiz"
+                },
+                "required": {
+                  "type": "boolean",
+                  "description": "required"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/{TenantID}/users/{UserID}/forms('{FormID}')/questions('{QuestionID}')": {
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "DeleteQuestion",
+        "operationId": "DeleteQuestion",
+        "parameters": [
+          {
+            "name": "TenantID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "FormID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "QuestionID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "PatchQuestion",
+        "operationId": "PatchQuestion",
+        "parameters": [
+          {
+            "name": "TenantID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "FormID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "QuestionID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "questionInfo": {
+                  "type": "string",
+                  "description": "questionInfo"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "title"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "order": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "order"
+                },
+                "isQuiz": {
+                  "type": "boolean",
+                  "description": "isQuiz"
+                },
+                "required": {
+                  "type": "boolean",
+                  "description": "required"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/{TenantID}/users/{UserID}/forms('{FormsID}')": {
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "DeleteForm",
+        "operationId": "DeleteForm",
+        "parameters": [
+          {
+            "name": "TenantID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "UserID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "FormsID",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "oauth2_auth": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
+      "tokenUrl": "https://login.windows.net/common/oauth2/token",
+      "scopes": {}
+    }
+  },
+  "security": [
+    {
+      "oauth2_auth": []
+    }
+  ],
+  "tags": []
+}
